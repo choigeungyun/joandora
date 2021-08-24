@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3,ul, p, figure, li{ margin: 0; padding: 0;}
+a { text-decoration: none; }
+address { font-style: normal; }
+small { font-size: 1em; }
+li { list-style: none; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트 및 공통적용 */
+@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2 { font-family: 'twaysky'; }
+body {
+       /* background: #b8dbf8; */
+}
+/* 헤더 */
+#header { position:relative; height: 600px; background: url(../../images/bg.jpg) no-repeat center center / cover ;
+
+        }
+#header .hgroup1 { position: absolute; top: 200px; left: 300px;
+  margin-top: 50px;
+  font-size: 40px ;  color: white; padding: 0 15px; }
+/* 네비 */
+#gnb { width: 1000px; height: 60px; position:absolute; top: 570px; left: calc(50% - 500px); }
+#gnb ul li { width: 25%; float: left; }
+#gnb ul li a { display: block; background: #036;
+    color: white;
+    text-align: center; line-height: 60px;
+  }
+#gnb ul li a:hover { background: white; color: #000; font-weight: bold; }
+#gnb ul li .on a { background: white; color: #000; font-weight: bold; }
+/* 메인 */
+main { background-color: white; }
+#content { padding: 40px 20px; margin-left: 150px; }
+#content h2 { margin: 30px 0 ;}
+#content h3 { margin: 10px 0; }
+#content article figure { margin-left: 40px; }
+#content article figure p { text-indent: 30px; }
+/* 푸터 */
+#footer { padding: 30px 0 10px; text-align: center; background: #030; color: white; }
+#footer p { margin-bottom: 15px; }
